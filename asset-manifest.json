@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/backlog-tools/static/css/main.073c9b0a.css",
+    "main.js": "/backlog-tools/static/js/main.7e0954fa.js",
+    "static/js/787.24b2c470.chunk.js": "/backlog-tools/static/js/787.24b2c470.chunk.js",
+    "static/media/logo.svg": "/backlog-tools/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/backlog-tools/index.html",
+    "main.073c9b0a.css.map": "/backlog-tools/static/css/main.073c9b0a.css.map",
+    "main.7e0954fa.js.map": "/backlog-tools/static/js/main.7e0954fa.js.map",
+    "787.24b2c470.chunk.js.map": "/backlog-tools/static/js/787.24b2c470.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.7e0954fa.js"
+  ]
+}
