@@ -1,0 +1,10 @@
+.component {
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  width: 128px;
+}

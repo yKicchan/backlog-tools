@@ -1,0 +1,30 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: var(--color);
+  background-color: var(--bg-color);
+  transition: box-shadow 0.3s ease-in-out;
+  font-family: -apple-system, YuGothic, "Yu Gothic Medium", "Yu Gothic", Meiryo, sans-serif;
+}
+
+#root {
+  height: 100%;
+}
