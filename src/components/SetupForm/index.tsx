@@ -5,13 +5,14 @@ import TextInput from "../TextInput";
 import Section from "../Section";
 import SectionTitle from "../SectionTitle";
 import Button from "../Button";
-import {MySelf, useGetUsersMyself} from "../../api/users";
+import {MySelf} from "../../api/users";
 import { useSetConsole } from "../Console/atom";
+import {useApi} from "../../api";
 
 const SetupForm = () => {
   const [config, setConfig] = useRecoilState(backlogConfig);
   const setConsole = useSetConsole();
-  const getUsersMyself = useGetUsersMyself();
+  const api = useApi();
 
   const onChange = (key: keyof BacklogConfig) => (value: string) => {
     localStorage.setItem(key, value);
@@ -22,12 +23,10 @@ const SetupForm = () => {
   };
 
   const ping = async () => {
-    getUsersMyself().then(async res => {
-      const mySelf = await res.json() as MySelf;
-      setConsole(`Success: ようこそ！ ${mySelf.name} さん🤗`);
-    }).catch(reason => {
-      setConsole(reason);
-    });
+    const res = await api('GET', '/users/myself');
+    if (!res) return;
+    const mySelf = await res.json() as MySelf;
+    setConsole(`Success: ようこそ！ ${mySelf.name} さん🤗`);
   };
 
   return (

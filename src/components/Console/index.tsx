@@ -13,8 +13,10 @@ const Console = () => {
   return (
     <pre id="console" className={styles.component}>
       <div className={styles.lines}>
-        {log.split("\n").map((_, i) => (
-          <span className={styles.numbers}>{i + 1}</span>
+        {log.split("\n").map((v, i) => (
+          <span key={i + v} className={styles.numbers}>
+            {i + 1}
+          </span>
         ))}
       </div>
       {log}

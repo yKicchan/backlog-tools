@@ -1,11 +1,13 @@
 import { useRecoilValue } from "recoil";
 import { backlogConfig } from "../components/SetupForm/atom";
+import { useSetConsole } from "../components/Console/atom";
 
 type Method = "GET" | "POST" | "PUT" | "DELETE";
-export const useApi = (method: Method, path: string, body?: unknown) => {
+export const useApi = () => {
+  const setConsole = useSetConsole();
   const config = useRecoilValue(backlogConfig);
   const endpoint = `https://${config.spaceKey}.backlog.jp/api/v2`;
-  return () =>
+  return (method: Method, path: string, body?: unknown) =>
     fetch(`${endpoint}${path}?apiKey=${config.apiKey}`, {
       method: method,
       mode: "cors",
@@ -19,9 +21,12 @@ export const useApi = (method: Method, path: string, body?: unknown) => {
       body: JSON.stringify(body),
     }).then(async (res) => {
       if (res.ok) return res;
-      const body = await res.json() as ErrorBody;
-      const reason = body.errors.map(e => `${errorCode[e.code]} / ${e.message}`).join('\n');
-      throw Error(reason)
+      const body = (await res.json()) as ErrorBody;
+      const reason = body.errors
+        .map((e) => `${errorCode[e.code]}: ${e.message}`)
+        .join("\n");
+      setConsole(reason);
+      throw Error(reason);
     });
 };
 
