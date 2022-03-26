@@ -1,0 +1,19 @@
+.component {
+  padding: .5rem 1rem;
+  border: 1px solid var(--box-border-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color);
+  background: var(--bg-color);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  white-space: nowrap;
+}
+
+.component:active {
+  box-shadow: var(--shadow-inset);
+}
