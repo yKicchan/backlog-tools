@@ -1,4 +1,4 @@
-export interface Attachment {
+declare interface Attachment {
   id: number;
   name: string;
   size: number;
@@ -6,7 +6,7 @@ export interface Attachment {
   created: string;
 }
 
-export interface CreatedUser {
+declare interface CreatedUser {
   id: number;
   userId: string;
   name: string;
