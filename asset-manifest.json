@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/backlog-tools/static/css/main.28f6b2e9.css",
+    "main.css": "/backlog-tools/static/css/main.10adfdbf.css",
     "main.js": "/backlog-tools/static/js/main.b0b8c40f.js",
     "static/js/787.24b2c470.chunk.js": "/backlog-tools/static/js/787.24b2c470.chunk.js",
     "static/media/backlog_logo.svg": "/backlog-tools/static/media/backlog_logo.88d5c461390b550ecf4e37e0a3c92bf8.svg",
     "index.html": "/backlog-tools/index.html",
-    "main.28f6b2e9.css.map": "/backlog-tools/static/css/main.28f6b2e9.css.map",
+    "main.10adfdbf.css.map": "/backlog-tools/static/css/main.10adfdbf.css.map",
     "main.b0b8c40f.js.map": "/backlog-tools/static/js/main.b0b8c40f.js.map",
     "787.24b2c470.chunk.js.map": "/backlog-tools/static/js/787.24b2c470.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28f6b2e9.css",
+    "static/css/main.10adfdbf.css",
     "static/js/main.b0b8c40f.js"
   ]
 }
