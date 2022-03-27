@@ -16,7 +16,7 @@
 }
 
 .lines {
-  margin-right: .5em;
+  margin-right: 1em;
   padding-right: .5em;
   border-right: 1px solid var(--separator-color);
   width: min-content;

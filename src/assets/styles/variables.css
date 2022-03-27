@@ -3,7 +3,7 @@
   --gray: rgb(96, 96, 96);
   --bg-color: #DFDBDB;
   --box-border-color: rgba(255, 255, 255, .2);
-  --separator-color: #D0D0D0;
+  --separator-color: #BBB;
   --shadow: 4px 4px 8px rgba(165, 160, 160, .7), -4px -4px 8px rgba(255, 255, 255, .7);
   --shadow-inset: inset 3px 3px 5px rgba(185, 180, 180, .7), inset -3px -3px 7px rgba(255, 255, 255, .7);
 
@@ -16,7 +16,7 @@
     --gray: rgb(160, 160, 160);
     --bg-color: #2A2A2A;
     --box-border-color: rgba(17, 17, 17, .2);
-    --separator-color: #333;
+    --separator-color: #555;
     --shadow: 4px 4px 8px rgba(17, 17, 17, .7), -4px -4px 8px rgba(70, 70, 70, .7);
     --shadow-inset: inset 3px 3px 5px rgba(17, 17, 17, .7), inset -3px -3px 7px rgba(51, 51, 51, .7);
   }
