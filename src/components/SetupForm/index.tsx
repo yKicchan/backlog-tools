@@ -5,9 +5,8 @@ import TextInput from "../TextInput";
 import Section from "../Section";
 import SectionTitle from "../SectionTitle";
 import Button from "../Button";
-import {MySelf} from "../../api/users";
 import { useSetConsole } from "../Console/atom";
-import {useApi} from "../../api";
+import { useApi } from "../../api";
 
 const SetupForm = () => {
   const [config, setConfig] = useRecoilState(backlogConfig);
@@ -23,9 +22,9 @@ const SetupForm = () => {
   };
 
   const ping = async () => {
-    const res = await api('GET', '/users/myself');
+    const res = await api("GET", "/users/myself");
     if (!res) return;
-    const mySelf = await res.json() as MySelf;
+    const mySelf = (await res.json()) as MySelf;
     setConsole(`Success: ようこそ！ ${mySelf.name} さん🤗`);
   };
 

@@ -1,4 +1,4 @@
-export interface MySelf {
+declare interface MySelf {
   id: number;
   userId: string;
   name: string;
