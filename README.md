@@ -1,5 +1,7 @@
 # Backlog tools
 
+[![Build and Deploy](https://github.com/yKicchan/backlog-tools/actions/workflows/deploy.yml/badge.svg)](https://github.com/yKicchan/backlog-tools/actions/workflows/deploy.yml)
+
 ## Get Started
 
 ```
