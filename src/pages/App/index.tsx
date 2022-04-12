@@ -4,6 +4,7 @@ import { RecoilRoot } from "recoil";
 import SetupForm from "../../components/SetupForm";
 import Console from "../../components/Console";
 import DeleteIssueAttachmentsForm from "../../components/DeleteIssueAttachmentsForm";
+import DeleteIssuesAttachmentsForm from "../../components/DeleteIssuesAttachmentsForm";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <SetupForm />
         <DeleteIssueAttachmentsForm />
+        <DeleteIssuesAttachmentsForm />
         <footer className={styles.footer}>
           <Console />
         </footer>
