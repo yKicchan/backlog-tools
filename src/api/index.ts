@@ -1,6 +1,7 @@
 import { useRecoilValue } from "recoil";
 import { backlogConfig } from "../components/SetupForm/atom";
 import { useSetConsole } from "../components/Console/atom";
+import { delay } from "../utilities/delay";
 
 type Method = "GET" | "POST" | "PUT" | "DELETE";
 export const useApi = () => {
@@ -20,6 +21,11 @@ export const useApi = () => {
       referrerPolicy: "no-referrer",
       body: JSON.stringify(body),
     }).then(async (res) => {
+      if (res.status === 429) {
+        setConsole(`Notice: レート制限のため処理を一時停止します。１分間お待ちください。🙇`);
+        await delay(60000);
+        setConsole(`Notice: 処理を再開します。🙋`);
+      }
       if (res.ok) return res;
       const body = (await res.json()) as ErrorBody;
       const reason = body.errors
