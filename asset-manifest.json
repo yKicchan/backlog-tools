@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/backlog-tools/static/css/main.10adfdbf.css",
-    "main.js": "/backlog-tools/static/js/main.b0b8c40f.js",
+    "main.css": "/backlog-tools/static/css/main.0c5d6daf.css",
+    "main.js": "/backlog-tools/static/js/main.a9b4c7d2.js",
     "static/js/787.24b2c470.chunk.js": "/backlog-tools/static/js/787.24b2c470.chunk.js",
     "static/media/backlog_logo.svg": "/backlog-tools/static/media/backlog_logo.88d5c461390b550ecf4e37e0a3c92bf8.svg",
     "index.html": "/backlog-tools/index.html",
-    "main.10adfdbf.css.map": "/backlog-tools/static/css/main.10adfdbf.css.map",
-    "main.b0b8c40f.js.map": "/backlog-tools/static/js/main.b0b8c40f.js.map",
+    "main.0c5d6daf.css.map": "/backlog-tools/static/css/main.0c5d6daf.css.map",
+    "main.a9b4c7d2.js.map": "/backlog-tools/static/js/main.a9b4c7d2.js.map",
     "787.24b2c470.chunk.js.map": "/backlog-tools/static/js/787.24b2c470.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10adfdbf.css",
-    "static/js/main.b0b8c40f.js"
+    "static/css/main.0c5d6daf.css",
+    "static/js/main.a9b4c7d2.js"
   ]
 }
